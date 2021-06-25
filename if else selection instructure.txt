@@ -1,0 +1,16 @@
+If else selection instructure
+
+#include<stdio.h>
+int main(){
+	int grade;
+	grade=50;
+	if(grade>=60){ 
+		printf("passed\n");
+	}
+	else{
+		printf("faild\n");
+	}
+	
+return 0;
+}
+		
