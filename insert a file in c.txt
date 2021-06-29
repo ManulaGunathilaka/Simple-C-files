@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+ //variable declaration
+ int number;
+ //get input
+ scanf("%d",&number);
+ r1=number %5;
+ r2=number %11;
+ if(r1==0 and r2==0)
+ //display input
+ printf("number is diviceble by 5 and 11 %s\n");
+ else
+ printf("number is not diviceble by 5 and 11 %s\n");
+ return 0;
