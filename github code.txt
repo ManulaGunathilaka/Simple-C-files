@@ -1,0 +1,18 @@
+ #include<stdio.h>
+int main(){
+ //array declaration
+ int i,j;//variable declaration
+ int mark1[10]={2,4,5,6,7,8,9,10,12,14};
+ int mark2[10]={10,20,30,40,50,60,70,80,90,100};
+ for(i=9;i>=0;i--){
+ //display output
+ printf("%d",mark1[i]);
+ printf(",");
+ }
+ for(j=9;j>=0;j--){
+ //display output
+ printf("%d",mark2[j]);
+ printf(",");
+ }
+ return 0;
+}
