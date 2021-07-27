@@ -1,0 +1,18 @@
+
+#include 
+int main() { 
+char name[25]; 
+float BSal,NSal,increment;
+ printf("Enter the Employee Name : "); 
+scanf("%s",&name); 
+printf("Enter the Basic Salary : ");
+ scanf("%f",&BSal); 
+if (BSal<5000)
+increment=BSal*5/100;
+	       else if (BSal<10000)
+		increment=BSal*10/100;
+	        else
+		increment=BSal*15/100;
+	        printf("%s your New Salary is %.2f\n",name,NSal);
+	        return 0;
+}
