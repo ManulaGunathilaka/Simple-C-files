@@ -29,3 +29,4 @@ else
 printf("Smallest value is %d\n",min);
 return 0;
 }
+
