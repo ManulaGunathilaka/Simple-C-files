@@ -1,18 +1,73 @@
 #include<stdio.h>
-Int main(){
-printf("A = %d\n", 'A'); 
-printf("B = %d\n", 'B'); 
-printf("C = %d\n", 'C'); 
-printf("a = %d\n", 'a');
- printf("b = %d\n", 'b');
- printf("c = %d\n", 'c');
- printf("0 = %d\n", '0');
- printf("1 = %d\n", '1'); 
-printf("2 = %d\n", '2'); 
-printf("$ = %d\n", '$');
- printf("* = %d\n", '*');
- printf("+ = %d\n", '+'); 
-printf("/ = %d\n", '/'); 
-printf("Blank character = %d\n", ' '); 
-return 0;
+Int main()
+{
+	int choice; 
+float r,circum,area,volume,pi=3.14; # include<stdio.h>
+ int main() {
+	float no1,no2,ans;
+ int operNum; 
+char oper; 
+printf("\t CALCULATOR \n");
+ printf("Instructions: \n");
+ printf("1 : + \n"); 
+printf("2 : - \n"); 
+printf("3 : * \n"); 
+printf("4 : / \n"); 
+
+printf("Enter the First Number : ");
+ scanf("%f",&no1); 
+printf("Enter the Second Number : ");
+ scanf("%f",&no2); 
+printf("Enter the Operator Number : "); 
+scanf("%d",&operNum);
+ switch(operNum) 
+{ 
+case 1:
+ ans=no1+no2;
+oper='+'; 
+break;
+		      case 2: 
+ans=no1-no2;
+ oper='-'; 
+break; 
+  	     case 3: 
+ans=no1*no2;
+ oper='*';
+ break; 
+    case 4:
+ ans=no1/no2; 
+oper='/'; 
+break; 
+    default: 
+printf("Wrong Operator Number please Retry"); 
+oper='X';
+ break;
+     } 
+if(oper!='X') 
+printf("The Answer for %.2f %c %.2f is %.2f\n",no1,oper,no2,ans);
+ return 0;
+ }
+
+printf("1.Circumference of a circle \n");
+ printf("2.Area of a circle\n"); 
+printf("3.Volume of a sphere\n"); 
+printf("\nWhat is your choice? "); 
+scanf("%d",&choice); 
+switch(choice)
+ {
+case 1: printf("Enter the radius : "); 
+scanf("%f",&r); 
+circum=2.00*pi*r;
+ printf("\nThe circumference is %.2f\n",circum);break; 
+case 2: printf("Enter the radius : "); 
+scanf("%f",&r); 
+area=pi*r*r;
+ printf("\nThe are of the circle is : %.2f\n",area);break; 
+case 3: printf("Enter the radius : "); 
+scanf("%f",&r); 
+volume=(4.00/3.00)*pi*r*r*r;
+ printf("\nThe volume of sphere is : %.2f\n",volume);break; 
+default : printf("Invalid choice\n"); 
+}
+ return 0; 
 }
