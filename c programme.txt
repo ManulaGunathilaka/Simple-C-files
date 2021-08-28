@@ -1,0 +1,30 @@
+#include<stdio.h>
+Int main(){
+int no=0;
+ while (no<=100)
+ {
+      printf("%d ",no); 
+	      o++;
+ } 
+     return 0;
+}
+Using Do while loop :
+	#include<stdio.h>
+	Int main(){
+		int no=1;
+ 		do 
+{ 
+     printf("%d ",no); 
+     no++; 
+}while (no<=100); 
+return 0; 
+}
+
+Using For loop :
+		#include<stdio.h>
+		Int main(){
+			int no; 
+for(no=1;no<=100;no++) 
+printf("%d ",no);
+ return 0;
+ 		}
