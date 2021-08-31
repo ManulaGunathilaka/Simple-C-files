@@ -1,11 +1,21 @@
 #include<stdio.h>
-int main(){
-int no;
-printf("Input a number : ");
-scanf("%d",&no);
-               if(no%2==0)
-printf("It is an Even number\n");
-	else
-	       printf("It is an Odd number\n");
-	return 0;
+#include<stdlib.h>
+int main() {
+ 	int marks,total=0,counter; 
+float avg; 
+for(counter=1;counter<=10;counter++)
+ { 
+printf("Enter the marks for subject %d : ",counter);
+ 	scanf("%d",&marks); 
+total=total+marks;
+ }
+ avg=(float)total/10;
+ printf("Total of Marks : %d\n",total);
+ printf("Average of Marks : %.2f ",avg);
+
+if(avg<50)
+printf("Fail\n");
+ 	else
+ 		printf("Pass\n");
+ return 0; 
 }
