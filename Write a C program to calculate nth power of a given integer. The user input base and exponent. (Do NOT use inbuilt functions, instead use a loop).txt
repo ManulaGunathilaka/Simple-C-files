@@ -1,0 +1,15 @@
+# include
+ int main() { 
+  int base,exponent,Result=1; 
+  printf("Enter the base : "); 
+  scanf("%d",&base); 
+  printf("Enter the exponent : "); 
+  scanf("%d",&exponent); 
+  while(exponent!=0)
+ { 
+  Result=Result*base;
+   exponent--;
+ }
+   printf("The answer is %d\n",Result);
+   return 0;
+ }
