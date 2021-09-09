@@ -1,0 +1,7 @@
+#include
+ int main() { 
+char c;
+ for(c = 'A'; c <= 'Z'; c++) 
+    printf("%c ASCII value = %d \n", c, c);
+ return 0; 
+}
