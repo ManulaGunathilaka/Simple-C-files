@@ -1,0 +1,11 @@
+#include
+ int main() {
+ int no; 
+printf("Enter a number : "); 
+scanf("%d\n",&no); 
+if (no%no==1)
+                 printf("It's prime number"); 
+else 
+     printf("It isn't a prime number"); 
+return 0;
+ }
