@@ -1,0 +1,12 @@
+#include
+ int main() {
+ int no,sum=0,x=1; 
+while(no!=(-1)) 
+{ 
+     printf("Enter number %d : ",x++);
+     scanf("%d",&no);
+     sum=sum+no; 
+}
+ printf("\nThe sum is : %d ",sum); 
+return 0; 
+}
