@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() { 
+int XY[10];
+ int i,counter=0;
+ for(i=0;i<10;i++)
+{
+ printf("Enter number %d : ",i+1);
+ scanf("%d",&XY[i]);
+ if(XY[i]%2==0) 
+       counter=counter+1; 
+}
+ printf("\n"); 
+for(i=0;i<10;i++)
+       printf("%d\t",XY[i]); 
+printf("\n\nNumber of even numbers : %d \n\n",counter);
+ return 0;
+ }
