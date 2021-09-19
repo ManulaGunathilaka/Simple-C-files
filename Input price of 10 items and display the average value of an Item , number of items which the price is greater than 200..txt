@@ -1,0 +1,17 @@
+#include 
+int main() {
+ int i,counter=0; 
+float price,sum=0,avg;
+ for(i=0;i<10;i++)
+{
+printf("Enter price of %d item : ",i+1);
+ scanf("%f",&price); 
+sum=sum+price;
+if(price>200)
+counter++; 
+} 
+avg=sum/10; 
+printf("\nThe average value of an item : %.2f\n",avg);
+ printf("Number of items which the price is greater than 200 : %d\n",counter); 
+return 0;
+ }
