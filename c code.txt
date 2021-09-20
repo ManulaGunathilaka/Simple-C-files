@@ -1,0 +1,16 @@
+#include 
+int main() { 
+int EmpNo,counter=0; 
+float BSal; 
+while(EmpNo!=-999)
+ { 
+    printf("Enter the employee number : ");
+    scanf("%d",&EmpNo);
+    printf("Enter the basic salery : "); 
+    scanf("%d",&BSal); 
+    if(BSal>=5000)
+    counter++; 
+}
+ printf("Number of employees whose basic salery gretaer than 5000 : %d\n",counter); 
+return 0; 
+}
