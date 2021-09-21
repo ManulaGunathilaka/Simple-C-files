@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+       int EmpNo,counter=0,hours,rate,ot=0;
+       while(EmpNo!=-999)
+   {
+             printf("Enter the employee number : ");
+             scanf("%d",&EmpNo);
+             printf("Enter the hours worked : ");
+              scanf("%d",&hours);
+              if(hours>=40)
+                   rate=200;
+               else
+      rate=150;
+ ot=hours*rate;
+ 	if(ot>=4000)
+ counter++;
+ }
+ printf("number of employees whose Over Time Payment is gretaer than 4000 : %d",counter);
+ return 0;
+}
