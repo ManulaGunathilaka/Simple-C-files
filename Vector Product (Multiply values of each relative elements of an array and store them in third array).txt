@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+     int arr1[5],arr2[5],i,product[5];
+    for (i=0;i<5;i++)
+   {
+        printf("input values to array 1 =");
+        scanf("%d",&arr1[i]);
+        printf("input values to array 2 =");
+        scanf("%d",&arr2[i]);
+      product[i]=arr1[i]*arr2[i];
+ }
+ for (i=0;i<5;i++)
+ printf("%4d",product[i]);
+ return 0;
+}
