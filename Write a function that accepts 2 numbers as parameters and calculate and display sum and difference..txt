@@ -1,0 +1,17 @@
+#include <stdio.h>
+void calc(int x, int y)
+{
+ int sum, diff;
+ 
+ sum=x+y;
+ difference=x-y;
+ printf("Sum is %d\n", sum);
+ printf("Difference is %d\n", diff);
+}
+int main()
+{
+ int a,b;
+ printf("Enter two numbers : ");
+ scanf("%d %d", &a, &b);
+ calc(a,b);
+}
