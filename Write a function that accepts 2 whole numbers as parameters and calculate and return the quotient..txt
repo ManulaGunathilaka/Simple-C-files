@@ -1,0 +1,12 @@
+#include <stdio.h>
+int division;
+void calc(int x, int y)
+{
+     division=x/y;
+return division;
+}
+int main()
+{
+     calc(100,50);
+     printf("The Quotient is %d", division);
+}
