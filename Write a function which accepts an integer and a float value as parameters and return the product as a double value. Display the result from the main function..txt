@@ -1,0 +1,12 @@
+#include <stdio.h>
+double product;
+double calc(int x, float y)
+{
+      product=x*y;
+   return product;
+}
+   int main()
+{
+      calc(10, 20.5);
+      printf("The product is %.1f", product);
+}
