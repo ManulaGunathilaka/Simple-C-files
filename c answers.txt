@@ -1,20 +1,22 @@
-#include<stdio.h>
-int main(){
-       int EmpNo,counter=0,hours,rate,ot=0;
-       while(EmpNo!=-999)
+#include <stdio.h>
+#include <math.h>
+void power(int a,int b)
+{
+    int i,p=1;
+    for(i=1;i<=b;i++)
    {
-             printf("Enter the employee number : ");
-             scanf("%d",&EmpNo);
-             printf("Enter the hours worked : ");
-              scanf("%d",&hours);
-              if(hours>=40)
-                   rate=200;
-               else
-      rate=150;
- ot=hours*rate;
- 	if(ot>=4000)
- counter++;
- }
- printf("number of employees whose Over Time Payment is gretaer than 4000 : %d",counter);
- return 0;
+         p=p*a;
+    }
+     printf("%d",p);
+    }
+   int main()
+  {
+    int x,y;
+    printf("Enter a base number :");
+ scanf("%d",&x);
+printf("Enter a exponent number :");
+scanf("%d",&y);
+printf("%d to the power %d = ",x,(x,y));
+power(x,y);
+return 0;
 }
