@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+float celsius(float F)
+{
+    float c;
+    c=(F-32)/1.8;
+    return c;
+}
+int main()
+{
+    float f;
+    printf("Enter Fahrenheit : ");
+    scanf("%f",&f);
+    printf("Celsius Equivalent of Element of Fahrenheit Temperature is %.2f 
+\n",celsius(f));
+}
