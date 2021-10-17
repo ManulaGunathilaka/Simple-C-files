@@ -1,0 +1,24 @@
+#include <stdio.h>
+double chechsmallestnumber(double a,double b,double c);
+int main()
+  {
+      double x,y,z;
+      printf("Enter three floating values :");
+      scanf("%lf %lf %lf",& x ,& y ,&z );
+      printf("The smallest value is %lf :\n",chechsmallestnumber(x,y,z));
+  }
+     double chechsmallestnumber(double a,double b,double c)
+  {
+      double smallest = a;
+      if(b < smallest )
+  {
+         if(c<b)
+          smallest = c;
+ }
+ else
+    if(c<smallest)
+ {
+       smallest=c;
+ }
+ return smallest;
+ }
